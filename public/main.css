@@ -1,0 +1,39 @@
+.nodisplay{
+  display: none;
+}
+#searchButton{
+  margin-right: 15px;
+  height: 60%;
+  margin-top: 15px;
+  margin-left: 15px;
+
+}
+
+#textInput{
+  border: 1px solid yellow;
+  height: 95%;
+}
+
+
+#searchForm{
+  display: flex;
+  justify-content: space-around;
+}
+
+.searchSelect{
+  display: flex;
+  justify-content: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+
+}
+
+nav{
+  height: 100px;
+}
+
+.browser-default{
+  margin-top: 5px;
+  height: 30px;
+}

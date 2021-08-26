@@ -1,12 +1,13 @@
 const router = require('express').Router();
-// const { Post } = require('../db/models');
+const { Notebook } = require('../db/models');
 
 
 router.route('/')
   .get(async (req, res) => {
-    // res.locals.user = req.session.user
-    // const posts = await Post.findAll();
-    // res.locals.posts = posts
+    res.locals.user = req.session.user
+    // const allBooks = await Notebook.findAll({ where: { userId: req.session.user.id } });
+    // console.log(allBooks);
+    // res.locals.allBooks = allBooks
     res.render('index')
   })
 

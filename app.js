@@ -8,6 +8,7 @@ const redis = require('redis');
 const session = require('express-session');
 let RedisStore = require('connect-redis')(session);
 let redisClient = redis.createClient()
+const userRouter = require('./routes/userRouter');
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -33,6 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.json());
 
 app.use('/', indexRouter);
+app.use('/user', userRouter);
 
 app.listen(PORT, () => {
   console.log('Server start on ', PORT)

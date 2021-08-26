@@ -1,1 +1,84 @@
-<h3>Hello Worlds</h3>
+<script defer src="/main.js"></script>
+<link rel="stylesheet" href="/main.css">
+
+<h3>Hello World</h3>
+
+
+{{#if user}}
+<div class="mainDiv" id="mainDiv">
+  {{!-- {{#each allBooks}} --}}
+  <div class="row" data-notebook>
+    <div class="col s3">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Express</span>
+
+        </div>
+        <div class="card-action">
+
+          <a href="#">Изменить</a>
+          <a href="#">Удалить</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row nodisplay " data-form>
+    <div class="col s3">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <input type="text" name="notebookName" id="notebookName">
+        </div>
+        <div class="card-action">
+
+          <a href="#">Изменить</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainDiv" id="mainDiv">
+    {{!-- {{#each allBooks}} --}}
+    <div class="row" data-notebook>
+      <div class="col s3">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Express</span>
+
+          </div>
+          <div class="card-action">
+
+            <a href="#">Изменить</a>
+            <a href="#">Удалить</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row nodisplay " data-form>
+      <div class="col s3">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <input type="text" name="notebookName" id="notebookName">
+          </div>
+          <div class="card-action">
+
+            <a href="#">Изменить</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    {{!-- {{/each}} --}}
+
+  </div>
+
+
+
+
+  {{/if}}

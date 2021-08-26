@@ -1,8 +1,24 @@
 <nav>
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo">Supper-Pupper Blog 2000 ddr5 24Ghz pro+</a>
+    <a href="#" class="brand-logo">NOTEBOOKS</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       {{#if user}}
+      <li id="searchForm">
+        <div class="searchSelect">
+          <form action="">
+            <select class="browser-default">
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+            <input id="textInput" type="text">
+          </form>
+
+        </div>
+
+
+        <button type="submit" id="searchButton">SEARCH</button>
+      </li>
+
       <li>Hello {{user.name}}</li>
       <li><a href="/user/logout">logOut</a></li>
       {{else}}
